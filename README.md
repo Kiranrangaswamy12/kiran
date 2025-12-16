@@ -1,2 +1,2 @@
-# kiranportfolio2002
+# kiran
 My personal portfolio website
