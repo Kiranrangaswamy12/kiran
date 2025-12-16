@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiran Raj | Software Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body {
+      background: #0b1120;
+      color: #e5e7eb;
+      scroll-behavior: smooth;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0; width: 100%;
+      background: rgba(2, 6, 23, 0.85);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      z-index: 1000;
+    }
+
+    nav h2 { color: #38bdf8; font-weight: 600; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li:hover { color: #38bdf8; }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+
+    .hero span { color: #38bdf8; }
+
+    .hero p {
+      margin: 20px auto;
+      max-width: 750px;
+      font-size: 1.1rem;
+      color: #cbd5f5;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 32px;
+      background: linear-gradient(135deg, #38bdf8, #6366f1);
+      color: #020617;
+      border-radius: 30px;
+      font-weight: 600;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 90px 60px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2.3rem;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #38bdf8;
+    }
+
+    /* CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+
+    .card:hover { transform: translateY(-8px); }
+
+    /* SKILLS */
+    .skills span {
+      display: inline-block;
+      padding: 10px 18px;
+      margin: 8px;
+      border-radius: 25px;
+      background: rgba(56,189,248,0.12);
+      color: #38bdf8;
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #020617;
+      padding: 30px;
+      text-align: center;
+      color: #94a3b8;
+    }
+
+    footer a { color: #38bdf8; }
+
+    .profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #38bdf8;
+  margin-bottom: 25px;
+  box-shadow: 0 0 30px rgba(56,189,248,0.6);
+}
+
+@media(max-width: 768px) {
+      nav { padding: 15px 30px; }
+      section { padding: 80px 30px; }
+      .hero h1 { font-size: 2.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h2>Kiran Raj</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div>
+    <img src="profile.jpg" alt="Kiran Raj" class="profile-pic">
+    <h1>Hi, I'm <span>Kiran Raj</span></h1>
+    <p>
+      Proactive and goal-oriented MCA graduate with strong skills in Java, software development,
+      data analysis, and project management. Passionate about building secure, scalable, and
+      real-world applications.
+    </p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      To secure a role where I can utilize my organizational, analytical, and problem-solving
+      skills along with technical expertise to deliver efficient and innovative software solutions.
+      Known for adaptability, reliability, and a strong desire to grow professionally while
+      contributing to organizational success.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="card skills">
+    <span>Java</span><span>C++</span><span>C</span><span>Python</span>
+    <span>SQL</span><span>MySQL</span><span>Linux</span><span>Windows</span>
+    <span>Manual Testing</span><span>Test Case Design</span><span>Defect Tracking</span>
+    <span>IBM Cloud</span><span>Java Full Stack Development</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Patient-Centric Health Information Exchange</h3>
+      <p>
+        Designed and implemented a secure system enabling healthcare providers to share and
+        access patient data efficiently while ensuring data security and compliance.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Street Care Operation Portal</h3>
+      <p>
+        Developed a Java & MySQL-based civic management system for complaint handling,
+        admin monitoring, and worker assignment to ensure timely resolution.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="grid">
+    <div class="card">MCA – New Horizon College of Engineering<br>GPA: 8.31</div>
+    <div class="card">BCA – Yuvaraja's College, University of Mysore<br>GPA: 8.05</div>
+    <div class="card">PUC – MASY'S Gurukul PU College<br>70.8%</div>
+    <div class="card">SSLC – MASY'S Gurukul High School<br>68.96%</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card" style="text-align:center">
+    <p>Email: kiranraj8618@gmail.com</p>
+    <p>Phone: 8618559361</p>
+    <p>Location: Bengaluru, India</p>
+    <p><a href="https://in.linkedin.com/in/kiranraj8618" target="_blank">LinkedIn Profile</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Kiran Raj | Designed for LinkedIn & Recruiters</p>
+</footer>
+
+</body>
+</html>
